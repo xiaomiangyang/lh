@@ -1,0 +1,188 @@
+@charset "UTF-8";
+body{
+    font-family: 'Microsoft YaHei','YaHei WebFont',Verdana,Geneva,Tahoma,sans-serif,'宋体';
+
+}
+.nDelay{
+    animation-delay: .5s;
+}
+.tDelay{
+    animation-delay: .8s;
+}
+/* ==============header direct============== */
+/*导航栏*/
+.header.navbar-default{
+    background-color: rgba(0,0,0,.4);
+    border-width: 0;
+    transition: all 0s;
+    -moz-transition: all 0s;
+    -webkit-transition: all 0s;
+    border-color: transparent;
+}
+.header .navbar-toggle{
+    margin: 24px 15px 0 0;
+}
+.header.navbar-default .navbar-toggle{
+    border: 0;
+}
+.header.navbar-default .navbar-toggle:hover,
+.header.navbar-default .navbar-toggle:focus{
+    background-color: rgba(255,255,255,.2);
+}
+.header.navbar-default .navbar-toggle .icon-bar{
+    background-color: #fff;
+}
+.header .navbar-header{
+    height: 70px;
+}
+
+    /*logo*/
+.header img{
+    height: 40px;
+    margin-top: 8px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+/*导航*/
+#menu{
+    position: absolute;
+    top: 0;
+    left: 51%;
+    transform: translate(-50%,32px);
+}
+#menu a{
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 15px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    background-color: transparent;
+    margin-left: 4px;
+}
+#menu .active a, #menu a:hover{
+    color: #00c2ff;
+}
+#menu a:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(255,255,255,.3);
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+#menu .active a:after, #menu a:hover:after{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+/*电话*/
+.header .phone{
+    padding: 8px 15px;
+    margin-top: 32px;
+    font-size: 17px;
+    color: #00c2ff;
+    font-weight: bold;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+.header .phone:hover{
+    text-decoration: none;
+}
+.header .phone i{
+    margin-right: 10px;
+}
+.header .phone + .tooltip .tooltip-inner{
+    max-width: 400px;
+}
+
+
+/* ==============header end============== */
+
+/* ==============banner direct ============== */
+.banner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+.banner .banner-img {
+    width: 100%;
+    min-height: 160px;
+    vertical-align: middle;
+    border: 0;
+}
+.banner .banner-content {
+    padding-top: 15%;
+    width: 1280px;
+    height: 400px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.banner-content .h1 span{
+    color: #00c2ff;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 1.2em;
+}
+
+/* ==============banner end ============== */
+
+.breadcrumb{
+    padding-right: 0;
+    padding-left: 0;
+    background-color: transparent;
+    border-radius: 0;
+    margin: 15px 0 30px;
+}
+.breadcrumb li.active:first-child {
+    font-weight: bold;
+}
+.breadcrumb>li:nth-of-type(2):before{
+    content: "";
+    padding: 0;
+}
+.breadcrumb a{
+    color: #00c2ff;
+    text-decoration: underline;
+}
+
+.container .lingxin-font{
+    font-family: lingxin,'Microsoft YaHei','YaHei WebFont',Verdana,Geneva,Tahoma,sans-serif,'宋体';
+    font-weight: normal!important;
+    font-style: italic;
+}
+.splitter {
+    margin: 30px 0 50px;
+    text-align: center;
+}
+.splitter img {
+    max-width: 100%;
+}
+.btn-info {
+    border-color: #00c2ff;
+    background-color: rgba(0,194,255,.75);
+    color: #fff;
+}
+.btn-danger {
+    border-color: #ff4900;
+    background-color: rgba(255,73,0,.75);
+    color: #fff;
+}
+
+
+/* ==============footer direct ============== */
+footer.footer{
+    padding: 25px 0 15px;
+    color: #fff;
+    background-color: #666;
+}
+/* ==============footer end ============== */
